@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Adder</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        height: 100vh;
+        align-items: center;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+      }
+      .icon {
+        font-size: 24px;
+        margin: 0 10px;
+        color: #4caf50;
+      }
+   
+      input {
+        width: 42%;
+        font-size: 16px;
+      }
+      button {
+        /* margin: 10px; */
+        margin-top: 6px;
+              width: 100%;
+        font-size: 20px;
+        background-color: #4caf50;
+        color: white;
+        border: #4caf50;
+      }
+      #result {
+        /* margin-top: 10px;
+        font-weight: bold; */
+        font-size: 1.2rem;
+      }
+   
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <i class="fa fa-plus-circle icon" aria-hidden="true"></i>Number Adder
+      </h1>
+      <p>Enter two numbers and click the button to add them together.</p>
+      <div class="inputGroup">
+        <input
+          type="number"
+          id="num1"
+          placeholder="Enter first number"
+          required
+        />
+        <i class="fas fa-plus icon"></i>
+        <input
+          type="number"
+          id="num2"
+          placeholder="Enter second number"
+          required
+        />
+       
+      </div>
+       <button id="addButton" onclick="Add()">Add Numbers</button>
+        <div id="result">Result: <h3 class="res"></h3></div>
+        <script src="script.js"></script>
+    </div>
+  </body>
+</html>
