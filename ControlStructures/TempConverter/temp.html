@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperatur converter</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            font-size: large;
+        }
+        .inputSection{
+            display: flex;
+            gap: 5px;
+        }
+  
+        .result{
+            display: flex;
+            flex-direction: column;
+         
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+    <div class="inputSection">
+      <div>Enter Temperature:<input type="number" id="Temperature" placeholder="Enter Temperature" required /></div>
+      <label> Convert to:</label>
+      <select id="conversionType">
+        <option value="toCelsius">Celcius</option>
+        <option value="toFahrenheit">Fahrenheit</option>
+      </select>
+      <button id="btn">Convert</button>
+    </div>
+    <div class="result">
+      <h2>Results:</h2>
+       <li id="ans" style="display: none;"></li>
+    
+      
+    </div>
+    <script src="temp.js"></script>
+  </body>
+</html>

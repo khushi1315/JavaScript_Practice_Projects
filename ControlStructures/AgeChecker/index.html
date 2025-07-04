@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Eligibilty Checker</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            font-size: large;
+        }
+        .inputSection{
+            display: flex;
+            gap: 5px;
+        }
+        li{
+            display: none;
+               width: 100%;
+        }
+        .result{
+            display: flex;
+            flex-direction: column;
+         
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Age Eligibilty Checker</h1>
+    <div class="inputSection">
+        <div>Enter your age: <input type="number" id="age" required></div>
+        <button id="btn">Check Eligibility</button>
+    </div>
+    <div class="result">
+        <h2>Results:</h2> <br>
+        <li>You are  <span id="vote"> </span> eligible to vote</li>
+        <li>You are  <span id="drive"></span>  eligible to drive</li>
+    </div>
+    <Script src="script.js"></Script>
+</body>
+</html>
