@@ -6,8 +6,14 @@
 ## ➕Number Adder
 ## 🎶Sound Board
 
-## functions Practice Folder: only js
+## Functions Practice Folder: only js
   + Bmi Calculator
   + calculator
   + Character Tool
   + String Formatter
+ 
+## Control Structure Folder: html,js
++ Age Checker 
++ Know your animal sound
++ CountDown
++ Guess the number
