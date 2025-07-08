@@ -1,0 +1,162 @@
+/* styles.css */
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 28px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.calculator-header {
+  height: 8px;
+  background: linear-gradient(90deg, #4f8cff, #50e3c2);
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 16px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.subtitle {
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.calculator-body {
+  margin-top: 12px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-grp {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-grp label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.input-grp input[type="number"] {
+  padding: 10px 36px 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.input-grp input[type="number"]:focus {
+  border: 1.5px solid #4f8cff;
+  outline: none;
+}
+
+.input-icon {
+  position: absolute;
+  right: 12px;
+  top: 38px;
+  color: #a0aec0;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+#calculateBtn {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #4f8cff, #50e3c2);
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+#calculateBtn:hover {
+  background: linear-gradient(90deg, #50e3c2, #4f8cff);
+}
+
+.results {
+  margin-top: 28px;
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 18px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.results h3 {
+  margin-top: 0;
+  color: #4f8cff;
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.result-grid {
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.result-label {
+  color: #6c757d;
+  font-size: 0.98rem;
+}
+
+.result-value {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 2px;
+}
+
+@media (max-width: 500px) {
+  .calculator {
+    padding: 18px 6px;
+    max-width: 98vw;
+  }
+  .result-grid {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
