@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip calculator</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #57064b;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    .container {
+      width: 100vw;
+      height: 100vh;
+      background: rgb(69, 3, 78);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .sub{
+        margin-top: 20px;
+        width: 1000px;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        gap: 30px;
+        
+    }
+    .Hero{
+        align-self: center;
+        margin-top: -175px;
+    }
+    #left{
+width: 400px;
+        height: 300px;
+        align-self: center;
+    }
+    .bill{
+        color: antiquewhite;
+        margin: 30px;
+    
+    }
+    #right{
+        width: 600px;
+        height: 300px;
+        align-self: center;
+    }
+    .result{
+        display: flex;
+        flex-direction: column;
+        margin-top: -20px;
+    }
+    .box{
+        border: 1px  solid violet;
+        background-color: rgb(112, 74, 141);
+        height: 30px;
+         margin: 15px;
+       
+    }
+    .Box{
+        border: 2px solid black;
+
+    }
+    h3{
+        font-size: x-large;
+    }
+    input {
+      background-color: rgb(112, 74, 141);
+      border-radius: 7px;
+    }
+    .button{
+        border: 2px solid rgb(184, 143, 211);
+        border-radius: 5px;
+        align-content: center;
+        width: 200px;
+        height: 30px;
+        margin-left: 23px;
+        color: rgb(4, 9, 12);
+        background-color: rgb(172, 118, 219);
+    }
+
+    .res {
+      color: rgba(12, 9, 50, 0.767);
+    }
+    h1{
+        color: rgb(146, 195, 236);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="Hero">
+        <h1>Split & Share</h1>
+        <p>The smart way to calculate and split bills wiht friends.</p>
+      </div>
+      <div class="sub">
+        <div class="Box" id="left">
+          <div class="bill">
+            BILL AMOUNT
+            <input type="number" id="amount"/>
+          </div>
+
+          <div class="bill" >
+            SERVICE rating
+            <input type="text" id="rating" />
+          </div>
+          <div class="bill" >
+            NUMBER OF PEOPLE
+            <input type="number" id="numberOfPeople"/>
+          </div>
+           <button id="button" class="button">Calculate Split</button>
+        </div>
+        <div class="Box" id="right">
+          <h3>Breakdown</h3>
+          <div class="result">
+            <div class="box" id="Tip Amount"> Tip Amount
+              <span class="res" id="tip">$0.00</span>
+            </div>
+            <div class="box" id="Total Bill">Total Bill
+              <span id="Totalbill" class="res">$0.00</span>
+            </div>
+            <div class="box" id="PerPerson">Per Person
+              <span class="res" id="PP">$0.00</span>
+            </div>
+            <div class="box" id="TipPerPerson">Tip Per Person
+              <span class="res" id="tpp">$0.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
