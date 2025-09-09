@@ -21,7 +21,8 @@
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
       }
 
-      h1, h2 {
+      h1,
+      h2 {
         color: #333;
       }
 
@@ -83,10 +84,21 @@
       <button id="toggleBtn">Toggle Theme</button>
     </section>
 
+    <!-- Search In page-->
+    <section class=" section-card" id="search-section">
+      <h2>🔍 Search</h2>
+      <input type="text" id="searchInput" placeholder="Search tasks..." />
+    </section>
+
     <!-- Character Counter -->
     <section class="section-card" id="char-counter">
       <h2>💬 Character Counter</h2>
-      <input type="text" name="intro" id="intro" placeholder="Type something..." />
+      <input
+        type="text"
+        name="intro"
+        id="intro"
+        placeholder="Type something..."
+      />
       <p id="counter">Characters: <span id="count">0</span></p>
     </section>
 
@@ -100,8 +112,18 @@
     <!-- Key Press Tracker -->
     <section class="section-card" id="key-tracker">
       <h2>⌨️ Key Press Tracker</h2>
-      <div id="key-box" style="font-size: 24px; font-weight: bold; margin-top: 20px">🔑</div>
-      <div id="key-up" style="font-size: 24px; font-weight: bold; margin-top: 20px">🔑</div>
+      <div
+        id="key-box"
+        style="font-size: 24px; font-weight: bold; margin-top: 20px"
+      >
+        🔑
+      </div>
+      <div
+        id="key-up"
+        style="font-size: 24px; font-weight: bold; margin-top: 20px"
+      >
+        🔑
+      </div>
     </section>
 
     <!-- To-Do List -->
@@ -109,6 +131,7 @@
       <h2>📝 My To-Do List</h2>
       <input type="text" id="taskInput" placeholder="Enter task" />
       <button id="addTaskBtn">Add Task</button>
+
       <ul id="taskList"></ul>
     </section>
 

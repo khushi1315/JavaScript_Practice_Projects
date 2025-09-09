@@ -65,7 +65,49 @@ document.getElementById('addTaskBtn').addEventListener('click',function(){
         newTask.innerText = taskInput.value;
         taskList.appendChild(newTask);
         taskInput.value = ''; // Clear the input field
+        const done=document.createElement('button');
+        done.innerText='Done';
+        done.addEventListener('click',function(){
+            newTask.style.textDecoration='line-through';
+
+        })
+        const edit=document.createElement('button');
+        edit.innerText='Edit';
+        edit.addEventListener('click',function(){
+            newTask.contentEditable=true;
+            //ToDo ->newTask.focus(); brings the cursor to the end of the text
+            newTask.focus();
+        })
+        const deleteBtn=document.createElement('button');
+        deleteBtn.innerText='Delete';
+        deleteBtn.addEventListener('click',function(){
+            taskList.removeChild(newTask);
+        })
+        newTask.appendChild(done);
+        newTask.appendChild(edit);
+        newTask.appendChild(deleteBtn);
+      
     } else {
         alert('Please enter a task!');
     }
+})
+
+
+// Search functionality
+document.getElementById('searchInput').addEventListener('input', function() {
+    const searchInput=this.value.toLowerCase().trim();
+    const elements=document.querySelectorAll(' p,div, h1, h2, h3, li, span ')
+    elements.forEach(ele=>{
+        const originalText=ele.textContent.toLowerCase().trim();;
+
+        if(searchInput!==' ' && ele.innerText.toLowerCase().includes(searchInput)){
+            ele.style.display='block';
+            ele.style.backgroundColor='lightblue';
+        }
+        else {
+           
+            ele.style.backgroundColor='';
+        }
+    })
+
 })

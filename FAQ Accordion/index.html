@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FAQ Accordion</title>
+  <style>
+    .faq-container {
+      width: 60%;
+      margin: auto;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+    .faq-item {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    .question {
+      font-weight: bold;
+      cursor: pointer;
+      padding: 10px;
+    }
+    .answer {
+      display: none;
+      padding: 10px;
+      color: #444;
+    }
+    .answer.show {
+      display: block;
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="question">
+        <span class="symbol">+ </span>What is JavaScript?</div>
+      <div class="answer">
+        JavaScript is a scripting language for web development.</div>
+    </div>
+    <div class="faq-item">
+      <div class="question">
+        <span class="symbol">+ </span>Why learn JavaScript?</div>
+      <div class="answer">Because it adds interactivity to web pages!</div>
+    </div>
+    <div class="faq-item">
+      <div class="question">
+        <span class="symbol">+ </span>What is the DOM?</div>
+      <div class="answer">DOM is the Document Object Model, the browser's structure of HTML.</div>
+    </div>
+  </div>
+  <div class="counter" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+    <h1 style="justify-content: center;">Counter App </h1>
+    <button id="decrement">➖</button>
+    <div id="countDisplay">Count<span id="count">0</span></div>
+    <button id="increment">➕</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
