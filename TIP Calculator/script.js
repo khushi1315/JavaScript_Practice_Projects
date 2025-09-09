@@ -25,3 +25,6 @@ function calculateTip(){
 
 }
 document.getElementById("button").addEventListener("click",calculateTip);
+const allELe=document.querySelectorAll("input").forEach((ele)=>{
+    ele.addEventListener('input',calculateTip);
+})
